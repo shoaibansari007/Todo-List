@@ -1,0 +1,119 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Shadows Into Light", cursive;
+}
+.container {
+  min-width: 100%;
+  max-width: min-content;
+  display: flex;
+  align-items: center;
+  z-index: 10;
+  background: transparent;
+  flex-direction: column;
+  min-height: 100vh;
+  max-height: min-content;
+  background: linear-gradient(135deg, #f7f7f7, #4d1bb0cc, #30008fcc, #00003fdd);
+}
+
+.todo {
+  padding: 40px;
+  background: #d3bdff;
+  border-radius: 10px;
+  filter: blur(0px);
+  z-index: 4;
+  margin-top: 50px;
+}
+h1 {
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+}
+.row {
+  display: flex;
+  flex: 1;
+  margin: 10px 0;
+  position: relative;
+  width: 300px;
+}
+input,
+.add {
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 50px;
+}
+input {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 75px;
+}
+.add {
+  position: absolute;
+  width: 70px;
+  right: 0;
+  background: #00003fdd;
+  color: #fff;
+}
+.todo-list {
+  background: #f9f3f3;
+  z-index: 1;
+  padding: 0 20px;
+  padding-bottom: 2px;
+  border-radius: 0 0 10px 10px;
+  width: 350px;
+  margin-bottom: 50px;
+  padding-bottom: 20px;
+}
+.list {
+  font-size: 24px !important;
+}
+ul li {
+  list-style: none;
+  margin: 10px;
+  position: relative;
+  margin-left: 30px;
+  padding-right: 20px;
+  word-break: break-word;
+  cursor: pointer;
+}
+ul li::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  z-index: 10;
+}
+.dlt {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: 0;
+  z-index: 20;
+  border-radius: 50%;
+  cursor: pointer;
+}
+ul li::after:hover {
+  background-color: #00003f33;
+}
+ul li::before {
+  width: 12px;
+  height: 12px;
+  border: 3px solid #00003fdd;
+  border-radius: 50%;
+  left: -25px;
+}
+.checked {
+  text-decoration: line-through;
+  color: #00003f77;
+}
+ul li.checked::before {
+  background: url(Img/check.gif);
+  background-size: cover;
+  background-position: center;
+  border: none;
+  width: 20px;
+  height: 20px;
+  left: -27px;
+  top: 3px;
+}
