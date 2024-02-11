@@ -9,6 +9,7 @@
   max-width: min-content;
   display: flex;
   align-items: center;
+
   z-index: 10;
   background: transparent;
   flex-direction: column;
