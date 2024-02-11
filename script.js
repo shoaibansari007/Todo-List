@@ -12,7 +12,7 @@ function addTask() {
     li.textContent = task.value;
     ul.appendChild(li);
     li.appendChild(dlt);
-    dlt.src = "img/delete.gif";
+    dlt.src = "Img/delete.gif";
     dlt.classList.add("dlt");
   }
   task.value = "";
